@@ -1,0 +1,14 @@
+# NexAgent Studio application — Python 3.10 or newer.
+# requirements.lock.txt holds the exact versions tested on Python 3.11.
+fastapi>=0.115,<1
+starlette>=0.40
+uvicorn[standard]>=0.30
+pydantic>=2.7,<3
+argon2-cffi>=23.1
+httpx>=0.27,<1
+numpy>=1.26,<3
+pypdf>=4.3
+python-docx>=1.1
+python-multipart>=0.0.9
+cryptography>=42
+networkx>=3.2          # GraphRAG communities (Louvain)

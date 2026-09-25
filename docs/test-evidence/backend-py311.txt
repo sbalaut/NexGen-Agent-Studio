@@ -1,0 +1,70 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.15, pytest-9.1.1, pluggy-1.6.0 -- /home/claude/venv/bin/python
+cachedir: .pytest_cache
+rootdir: /home/claude/nexagent-studio/backend
+plugins: anyio-4.15.1
+collecting ... collected 56 items
+
+tests/test_api_flow.py::test_login_backoff_is_per_account_not_site_wide PASSED [  1%]
+tests/test_api_flow.py::test_lock_grows_exponentially_and_is_capped PASSED [  3%]
+tests/test_api_flow.py::test_csrf_and_origin_required PASSED             [  5%]
+tests/test_api_flow.py::test_security_headers PASSED                     [  7%]
+tests/test_api_flow.py::test_preview_blocks_keep_table_rows_and_sections PASSED [  8%]
+tests/test_api_flow.py::test_scanned_pdf_reported PASSED                 [ 10%]
+tests/test_api_flow.py::test_failed_index_keeps_previous_generation PASSED [ 12%]
+tests/test_api_flow.py::test_graph_cannot_bypass_review PASSED           [ 14%]
+tests/test_api_flow.py::test_graph_rejects_cycles_unknown_nodes_and_foreign_kbs PASSED [ 16%]
+tests/test_api_flow.py::test_version_conflict_detected PASSED            [ 17%]
+tests/test_api_flow.py::test_good_answer_released_with_server_built_citations PASSED [ 19%]
+tests/test_api_flow.py::test_swapped_value_goes_to_engineer_and_stream_has_no_draft PASSED [ 21%]
+tests/test_api_flow.py::test_repair_then_pass PASSED                     [ 23%]
+tests/test_api_flow.py::test_reviewer_unavailable_means_human_review PASSED [ 25%]
+tests/test_api_flow.py::test_unauthorized_user_cannot_retrieve_or_view PASSED [ 26%]
+tests/test_api_flow.py::test_restricted_content_never_sent_to_external_endpoint PASSED [ 28%]
+tests/test_api_flow.py::test_cancel_discards_late_response PASSED        [ 30%]
+tests/test_api_flow.py::test_missing_model_is_explicit PASSED            [ 32%]
+tests/test_api_flow.py::test_process_description_scope_excludes_interlock PASSED [ 33%]
+tests/test_api_flow.py::test_human_review_correction_and_dataset_two_person_rule PASSED [ 35%]
+tests/test_api_flow.py::test_dataset_version_splits_export_and_leakage PASSED [ 37%]
+tests/test_api_flow.py::test_document_deletion_restricts_dataset PASSED  [ 39%]
+tests/test_api_flow.py::test_training_requires_second_person_and_reports_blocked_preflight PASSED [ 41%]
+tests/test_api_flow.py::test_publish_rollback_and_api_keys PASSED        [ 42%]
+tests/test_api_flow.py::test_audit_is_append_only PASSED                 [ 44%]
+tests/test_api_flow.py::test_backup_and_restore PASSED                   [ 46%]
+tests/test_api_flow.py::test_training_operator_without_kb_access_cannot_see_examples PASSED [ 48%]
+tests/test_misc.py::test_golden_suite_composition PASSED                 [ 50%]
+tests/test_misc.py::test_golden_scoring_rules PASSED                     [ 51%]
+tests/test_misc.py::test_model_eval_scoring_penalises_abstention PASSED  [ 53%]
+tests/test_misc.py::test_alias_pinning_and_rollback PASSED               [ 55%]
+tests/test_misc.py::test_promotion_permission_is_separate PASSED         [ 57%]
+tests/test_misc.py::test_run_interrupted_by_restart_is_marked_failed PASSED [ 58%]
+tests/test_training_real.py::test_real_lora_training_evaluation_and_promotion PASSED [ 60%]
+tests/test_training_real.py::test_real_training_cancellation PASSED      [ 62%]
+tests/test_validators_review.py::test_supported_claims_pass[The design discharge pressure of 10-P-101A is 5 bar [1].-expected0] PASSED [ 64%]
+tests/test_validators_review.py::test_supported_claims_pass[The design reference temperature of 10-C-101 is 120 \xb0C [2].-expected1] PASSED [ 66%]
+tests/test_validators_review.py::test_supported_claims_pass[During startup the heater outlet temperature must not exceed 360 \xb0C [3].-expected2] PASSED [ 67%]
+tests/test_validators_review.py::test_swapped_values_rejected PASSED     [ 69%]
+tests/test_validators_review.py::test_swapped_with_citation_to_the_right_row_still_needs_the_right_value PASSED [ 71%]
+tests/test_validators_review.py::test_invented_tag_rejected PASSED       [ 73%]
+tests/test_validators_review.py::test_invalid_citation_rejected PASSED   [ 75%]
+tests/test_validators_review.py::test_uncited_plant_claim_rejected PASSED [ 76%]
+tests/test_validators_review.py::test_unit_value_sign_condition_inequality_negation PASSED [ 78%]
+tests/test_validators_review.py::test_normal_vs_trip_condition PASSED    [ 80%]
+tests/test_validators_review.py::test_scope_and_revisions PASSED         [ 82%]
+tests/test_validators_review.py::test_not_found_is_clean PASSED          [ 83%]
+tests/test_validators_review.py::test_language_mismatch_is_non_blocking PASSED [ 85%]
+tests/test_validators_review.py::test_model_cannot_override_failed_deterministic_checks PASSED [ 87%]
+tests/test_validators_review.py::test_unavailable_model_reviewer_routes_to_human PASSED [ 89%]
+tests/test_validators_review.py::test_unparseable_model_review_routes_to_human PASSED [ 91%]
+tests/test_validators_review.py::test_model_reviewer_can_make_stricter_and_result_is_spec_shaped PASSED [ 92%]
+tests/test_validators_review.py::test_prompt_marks_sources_as_untrusted PASSED [ 94%]
+tests/test_validators_review.py::test_extract_gate_requires_explicit_verdict PASSED [ 96%]
+tests/test_validators_review.py::test_extract_gate_all_or_nothing PASSED [ 98%]
+tests/test_validators_review.py::test_combine_without_model_expected_passes_clean_drafts_only PASSED [100%]
+
+=============================== warnings summary ===============================
+tests/test_api_flow.py::test_login_backoff_is_per_account_not_site_wide
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================== 56 passed, 1 warning in 195.95s (0:03:15) ===================

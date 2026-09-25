@@ -1,0 +1,5 @@
+tsc: no errors
+../backend/nexagent/static/index.html                   0.71 kB │ gzip:   0.45 kB
+../backend/nexagent/static/assets/index-wh6m2uwV.css   30.80 kB │ gzip:   6.33 kB
+../backend/nexagent/static/assets/index-CJGYBCdU.js   434.94 kB │ gzip: 135.74 kB
+✓ built in 2.57s

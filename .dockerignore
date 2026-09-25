@@ -1,0 +1,13 @@
+.git
+**/node_modules
+**/__pycache__
+**/.pytest_cache
+venv
+data
+backups
+wheelhouse
+lite
+docs/screenshots
+docs/test-evidence
+.env
+*.zip

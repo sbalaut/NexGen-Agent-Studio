@@ -1,0 +1,2 @@
+console errors: none
+screenshots: ['01-sign-in.png', '02-extraction-preview.png', '03-knowledge-base.png', '04-agent-builder-canvas.png', '05-builder-test-run.png', '06-builder-list-view.png', '07-published.png', '08-chat-verified-answer.png', '09-chat-sent-to-engineer.png', '10-engineer-review.png', '11-chat-engineer-answer.png', '12-admin-users.png', '13-audit-log.png', '14-mobile-assistants.png']

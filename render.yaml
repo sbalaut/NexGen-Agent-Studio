@@ -1,0 +1,26 @@
+# Render Blueprint — New + > Blueprint > pick this repository.
+# A persistent disk keeps the SQLite database, uploads and the key-encryption file across deploys.
+# (Disks need a paid instance type; on the free type all data is lost on every restart/deploy.)
+services:
+  - type: web
+    name: nexagent-studio
+    runtime: docker
+    plan: starter
+    healthCheckPath: /api/health
+    disk:
+      name: nexagent-data
+      mountPath: /data
+      sizeGB: 5
+    envVars:
+      - key: NEXAGENT_ORIGIN
+        sync: false            # set to your https URL, e.g. https://nexagent-studio.onrender.com
+      - key: NEXAGENT_PUBLIC_MODE
+        value: "1"
+      - key: NEXAGENT_DATA_DIR
+        value: /data
+      - key: NEXAGENT_TRUSTED_PROXY
+        value: "1"
+      - key: NEXAGENT_BOOTSTRAP_ADMIN
+        sync: false            # optional: first admin username
+      - key: NEXAGENT_BOOTSTRAP_ADMIN_PASSWORD
+        sync: false            # optional: remove after the first start

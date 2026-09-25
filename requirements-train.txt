@@ -1,0 +1,12 @@
+# Training environment (separate venv, set NEXAGENT_TRAIN_PYTHON to its python).
+# Install the torch build that matches your server's CUDA driver first, e.g.:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu121
+# Versions below are the ones the real CPU training test ran with.
+torch==2.14.0
+transformers==5.17.0
+peft==0.21.0
+accelerate==1.15.0
+safetensors==0.8.0
+tokenizers==0.23.2
+# QLoRA on NVIDIA GPUs only:
+# bitsandbytes

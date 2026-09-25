@@ -1,0 +1,15 @@
+venv/
+data/
+backups/
+wheelhouse/
+.env
+__pycache__/
+.pytest_cache/
+frontend/node_modules/
+evaluations/golden_results.json
+lite/node_modules/
+lite/dist/
+build-check/
+*.zip
+docs/screenshots/*99-failure.png
+*.tsbuildinfo

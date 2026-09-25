@@ -1,0 +1,2 @@
+These screenshots come from `scripts/e2e_browser.py`: a real browser driving the real NexAgent server (SQLite, job workers, executor, validators, review queue).
+**The model answers shown come from a scripted Ollama test double, not from a language model**, because no model weights could be downloaded in the build environment. For 10-C-101 the script deliberately returns a wrong value, to show the checks catching it and routing it to an engineer.

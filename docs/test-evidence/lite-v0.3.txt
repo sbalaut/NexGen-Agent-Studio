@@ -1,0 +1,23 @@
+
+ RUN  v2.1.9 /home/claude/nexagent-studio/lite
+
+ ✓ tests/lite.test.ts (17 tests) 56ms
+
+ Test Files  1 passed (1)
+      Tests  17 passed (17)
+   Start at  19:31:38
+   Duration  619ms (transform 201ms, setup 0ms, collect 270ms, tests 56ms, environment 0ms, prepare 66ms)
+
+vite v5.4.21 building for production...
+transforming...
+✓ 667 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                              1.08 kB │ gzip:   0.61 kB
+dist/assets/pdf.worker.min-Dswkl-cV.mjs  1,265.41 kB
+dist/assets/index-Cxq2TAbA.css              32.15 kB │ gzip:   6.61 kB
+dist/assets/pdf.worker.min-dSxz6soH.js       0.09 kB │ gzip:   0.11 kB
+dist/assets/index-BAxWKQ0Q.js              388.87 kB │ gzip: 122.44 kB
+dist/assets/pdf-Bf-CgogL.js                436.72 kB │ gzip: 130.66 kB
+dist/assets/index-BsnsNE2u.js              503.07 kB │ gzip: 154.60 kB
+✓ built in 5.94s
